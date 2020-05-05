@@ -24,7 +24,6 @@ nav.side {
 }
 nav.side ul {
     list-style: none;
-    margin-top: 50px;
 }
 nav.side ul li a {
     text-decoration: none;
@@ -33,7 +32,7 @@ nav.side ul li a {
     color: #fff;
     padding: 10px 0;
     font-size: 18px;
-    transition: 1s all ease;
+    transition: 0.3s all ease;
 }
 nav.side ul li a:hover{
     color:orangered;
@@ -97,6 +96,7 @@ a.nav-link:hover{
 }
 div.logo{
     width:200px;
+    padding-top: 30px !important;
 }
 .logo hr{
     border: 1px white solid;
@@ -118,7 +118,7 @@ div.logo{
     position: absolute;
     height: 100%;
     width: 100%;
-    background-color: rgba(3, 136, 245, 0.466);
+    background-color: rgba(3, 136, 245, 0.3);
     top:0;
     left: 0;
     color:white;
@@ -129,6 +129,9 @@ div.logo{
     left: 50%;
     transform: translateX(-50%);
     position: absolute;
+}
+.back h2{
+    color:white;
 }
 .content p{
     top:85%;
@@ -144,8 +147,22 @@ button.custom{
     font-size: 20px;
     transition: 0.5s all ease;
 }
+a.custom{
+    border: 2px solid #018185;
+    color:#018185;
+    background-color: transparent;
+    font-size: 20px;
+    transition: 0.5s all ease;
+}
+a.custom:hover{
+    color:white;
+    background-color: #018185;
+}
 .relative{
     position: relative;
+}
+.white{
+    color:white;
 }
 .absolute{
     position: absolute;
@@ -214,7 +231,7 @@ h2::after {
 	padding-bottom: 50px;
 }
 .carousel .item {
-	color: #999;
+	color: white;
 	font-size: 14px;
     text-align: center;
 	overflow: hidden;
@@ -244,7 +261,7 @@ h2::after {
 	padding-bottom: 5px;
 }
 .carousel .overview b {
-	color: #333;
+	color: white;
 	font-size: 15px;
 	text-transform: uppercase;
 	display: block;	
@@ -303,7 +320,7 @@ h2::after {
 
 /* blog starts */
     .blog{
-        background-color: #e2e2e2;
+        background-color: rgb(251, 248, 248);
         
     }
   
@@ -364,6 +381,9 @@ h2::after {
     -webkit-tap-highlight-color: transparent;
 }
 
+.testimonial .carousel-inner > .item {
+    height: 400px !important;
+}
 .slick-list
 {
     position: relative;
@@ -528,10 +548,10 @@ a {
  margin-bottom:40px
 }
 .footer--light {
- background:#e7e8ed
+ background:#018185;
 }
 .footer-big .footer-menu ul li a,.footer-big p,.footer-big ul li {
- color:#898b96
+ color:white;
 }
 .footer-menu {
  padding-left:48px
@@ -544,7 +564,7 @@ a {
  transition:.3s
 }
 .footer-menu ul li a:hover {
- color:#5867dd
+ color:#333;
 }
 .footer-menu--1 {
  width:100%
@@ -552,7 +572,8 @@ a {
 .footer-widget-title {
  line-height:42px;
  margin-bottom:10px;
- font-size:18px
+ font-size:18px;
+ color: white;
 }
 .mini-footer {
  background:#192027;
@@ -566,10 +587,10 @@ a {
  color:#999
 }
 .mini-footer p a {
- color:#5867dd
+ color:#018185;
 }
 .mini-footer p a:hover {
- color:#34bfa3
+ color:white;
 }
 .widget-about img {
  display:block;
@@ -591,8 +612,9 @@ a {
  padding-right:12px
 }
 .widget-about .contact-details li a {
- color:#5867dd
+ color:white;
 }
+
 @media (max-width:991px) {
  .footer-menu {
   padding-left:0
@@ -868,4 +890,44 @@ a {
     height: 500px;
 }
     
+}
+/* faq */
+section.acco{
+	padding: 60px 0;
+}
+
+#accordion-style-1 h1,
+#accordion-style-1 a{
+    color:#007b5e;
+}
+#accordion-style-1 .btn-link {
+    font-weight: 400;
+    color: #007b5e;
+    background-color: transparent;
+    text-decoration: none !important;
+    font-size: 16px;
+    font-weight: bold;
+	padding-left: 25px;
+}
+
+#accordion-style-1 .card-body {
+    border-top: 2px solid #007b5e;
+}
+
+#accordion-style-1 .card-header .btn.collapsed .fa.main{
+	display:none;
+}
+
+#accordion-style-1 .card-header .btn .fa.main{
+	background: #007b5e;
+    padding: 13px 11px;
+    color: #ffffff;
+    width: 35px;
+    height: 41px;
+    position: absolute;
+    left: -1px;
+    top: 10px;
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+	display:block;
 }
